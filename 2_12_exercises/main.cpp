@@ -4,7 +4,8 @@
 #include <algorithm>
 
 
-void number1(int num_elements) {
+void number1(int num_elements) 
+{
     // 1. Verify that the vector index operator is O(1)
     std::vector<int> vec;
     for (int i = 0; i < num_elements; ++i)
@@ -17,12 +18,14 @@ void number1(int num_elements) {
     std::cout << "Index took: " << elapsed_secs << " seconds." << std::endl;
 }
 
-void number2(int num_elements) {
+void number2(int num_elements) 
+{
     // 2. Verify that find and insert are O(1) for hash tables
 
     // Populate the hash table
     std::unordered_map<int, int> map;
-    for (int j = 0; j < num_elements; j++) {
+    for (int j = 0; j < num_elements; j++) 
+    {
         map[j] = 30;
     }
 
@@ -42,9 +45,11 @@ void number2(int num_elements) {
 }
 
 
-void print_vec(std::vector<int> v) {
+void print_vec(std::vector<int> v) 
+{
     std::cout << "The vector: ";
-    for (auto e : v) {
+    for (auto e : v) 
+    {
         std::cout << e << " ";
     }
     std::cout << std::endl;
@@ -52,7 +57,8 @@ void print_vec(std::vector<int> v) {
 }
 
 
-int main() {
+int main() 
+{
 
     // Exercise 1.
     // for (int n = 1000; n <= 10000; n = n + 1000)
@@ -83,5 +89,5 @@ int main() {
 
     
 
-    return 0;
+    return(0);
 }
